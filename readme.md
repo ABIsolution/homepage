@@ -8,6 +8,8 @@
   - [Git](#git)
 - [Getting Started](#getting-started)
   - [Clone Repository to Your Local Machine](#clone-repository-to-your-local-machine)
+  - [Start Local Development Environment](#start-local-development-environment)
+    - [Web](#web)
 - [Basic Git Commands](#basic-git-commands)
 - [Resources](#resources)
 
@@ -157,7 +159,7 @@ You can download and install Node.js version 18.18.2 from [the official node rel
 
 4. Open project using browser:
 
-   - [localhost](localhost)
+   - [localhost](http://localhost)
    - [127.0.0.1](http://127.0.0.1)
 
 ## Basic Git Commands
