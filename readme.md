@@ -3,6 +3,9 @@
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+  #preqequisites(#prerequisites)
+  - windows(#windows)
+  - Mac(#mac)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
@@ -29,7 +32,7 @@ It should display the installed Node.js version, which should be v18.18.2.
 
 ```bash
 
-    npm -v
+npm -v
 ```
 
     This should display the version of npm installed.
@@ -51,7 +54,7 @@ This should display the installed Node.js version, which should be v18.18.2.
 
 ```bash
 
-    npm -v
+npm -v
 ```
 
 This should display the version of npm installed.
