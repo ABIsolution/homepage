@@ -17,7 +17,7 @@
 
 **Node.js:** version 18.18.2.
 
-You can download and install Node.js version 18.18.2 from [this link](https://nodejs.org/download/release/v18.18.2/).
+You can download and install Node.js version 18.18.2 from [the official node release page](https://nodejs.org/download/release/v18.18.2/).
 
 **Windows**
 
@@ -120,6 +120,45 @@ You can download and install Node.js version 18.18.2 from [this link](https://no
    ```bash
    yarn install
    ```
+
+### Start LocaL Development Environment
+
+## Web
+
+1. Acquire credentials:
+
+   This has to run at the root of the project where the `credentials.sh` script is located.
+
+   ```bash
+   . credentials <profile>
+   ```
+
+2. Navigate to the web package directory:
+
+   ```bash
+   cd packages/web
+   ```
+
+3. Start Local Environment:
+
+   ```bash
+   npm run dev
+   ```
+
+   By default the local environment is using the port `3000`
+
+   To start the local environment using a different port, you can export an environmental with the desired value:
+
+   ```bash
+   export port=80 && npm run dev
+   ```
+
+   This command will start the local environment using port `80`.
+
+4. Open project using browser:
+
+   - [localhost](localhost)
+   - [127.0.0.1](http://127.0.0.1)
 
 ## Basic Git Commands
 
