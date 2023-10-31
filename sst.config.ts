@@ -1,14 +1,14 @@
-import { SSTConfig } from "sst";
-import { Default } from "./stacks/Default";
+import { SSTConfig } from 'sst';
+import { Web } from './stacks/Web';
 
 export default {
   config(_input) {
     return {
-      name: "abisolutions",
-      region: "us-east-1",
+      name: 'abisolutions',
+      region: 'us-east-1',
     };
   },
   stacks(app) {
-    app.stack(Default);
-  }
+    app.stack(Web);
+  },
 } satisfies SSTConfig;
