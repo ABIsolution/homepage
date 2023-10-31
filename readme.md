@@ -1,6 +1,4 @@
-# Project Name
-
-ABIsolutions homepage
+# ABIsolutions
 
 ## Table of Contents
 
