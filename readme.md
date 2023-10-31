@@ -25,7 +25,9 @@ You can download and install Node.js version 18.18.2 from [the official node rel
 
 1. Download the Windows Installer (MSI) package for Node.js version 18.18.2 from the provided link.
 
-2. Run the downloaded MSI installer package. Follow the installation wizard's instructions, and make sure to add Node.js to your system's PATH during the installation process.
+   - Look for the files that include the suffix `.msi`
+
+2. Run the downloaded MSI installer package. Follow the installation wizard's instructions, no changes are required since the default settings should include all the required selections.
 
    To check if Node.js is installed correctly, open a Command Prompt or PowerShell window and run the following commands:
 
