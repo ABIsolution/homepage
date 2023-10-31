@@ -3,19 +3,20 @@
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-  #preqequisites(#prerequisites)
-  - windows(#windows)
-  - Mac(#mac)
+  - [Node.js](#node.js)
+  - [Git](#git)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Prerequisites
 
+# Node.js
+
 **Node.js:** version 18.18.2.
 
 You can download and install Node.js version 18.18.2 from [this link](https://nodejs.org/download/release/v18.18.2/).
 
-# Windows
+**Windows**
 
 1. Download the Windows Installer (MSI) package for Node.js version 18.18.2 from the provided link.
 
@@ -37,7 +38,7 @@ npm -v
 
     This should display the version of npm installed.
 
-# Mac
+**Mac**
 
 1. Download the macOS Installer (PKG) package for Node.js version 18.18.2 from the provided link.
 
@@ -58,6 +59,8 @@ npm -v
 ```
 
 This should display the version of npm installed.
+
+# Git
 
 - **Git:** You'll also need Git for version control. If you don't have Git installed, you can download and install it from [the official Git website](https://git-scm.com/).
 
