@@ -123,7 +123,9 @@ You can download and install Node.js version 18.18.2 from [this link](https://no
 
 ## Basic Git Commands
 
-### 1. Initialize a New Git Repository
+### 1. Initialize a Git Repository
+
+**New Repository:**
 
 To start tracking a project with Git, you need to initialize a new repository. This creates a `.git` directory, which stores all the information needed for version control.
 
@@ -131,7 +133,9 @@ To start tracking a project with Git, you need to initialize a new repository. T
 git init
 ```
 
-### 2. Clone a Git Repository
+**_Note: This is not required when cloning an existing repository_**
+
+**Existing Repository:**
 
 To create a copy of an existing Git repository on your local machine, you can use the `git clone` command.
 
