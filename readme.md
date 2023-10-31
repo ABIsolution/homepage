@@ -114,6 +114,122 @@ You can download and install Node.js version 18.18.2 from [this link](https://no
    yarn install
    ```
 
+## Basic Git Commands
+
+### 1. Initialize a New Git Repository
+
+To start tracking a project with Git, you need to initialize a new repository. This creates a `.git` directory, which stores all the information needed for version control.
+
+```bash
+git init
+```
+
+### 2. Clone a Git Repository
+
+To create a copy of an existing Git repository on your local machine, you can use the `git clone` command.
+
+```bash
+git clone <repository_url>
+```
+
+Replace `<repository_url>` with the URL of the Git repository you want to clone.
+
+### 3. Check the Status of Your Repository
+
+You can check the status of your Git repository to see which files have been modified and are ready to be committed.
+
+```bash
+git status
+```
+
+### 4. Stage Changes for Commit
+
+To prepare changes for a commit, you need to stage them. You can use the `git add` command to stage changes.
+
+```bash
+git add <file_name>
+```
+
+You can replace `<file_name>` with the name of the specific file you want to stage, or use `.` to stage all changes.
+
+### 5. Commit Changes
+
+After staging changes, you can create a commit with a message to describe the changes.
+
+```bash
+git commit -m "Your commit message"
+```
+
+Replace `"Your commit message"` with a brief, descriptive message about the changes in this commit.
+
+### 6. View Commit History
+
+You can view the commit history of your repository, including commit messages and details.
+
+```bash
+git log
+```
+
+### 7. Create a New Branch
+
+You can create a new branch to work on a specific feature or fix. Use the `git branch` command to create a new branch.
+
+```bash
+git branch <branch_name>
+```
+
+Replace `<branch_name>` with the name of the new branch.
+
+### 8. Switch to a Different Branch
+
+To switch to a different branch, you can use the `git checkout` command.
+
+```bash
+git checkout <branch_name>
+```
+
+Replace `<branch_name>` with the name of the branch you want to switch to.
+
+### 9. Merge Changes from One Branch to Another
+
+To merge changes from one branch into another, use the `git merge` command.
+
+```bash
+git merge <source_branch>
+```
+
+Replace `<source_branch>` with the name of the branch you want to merge into the current branch.
+
+### 10. Push Changes to a Remote Repository
+
+If you want to share your local changes with a remote repository, you can use the `git push` command.
+
+```bash
+git push origin <branch_name>
+```
+
+Replace `<branch_name>` with the name of the branch you want to push.
+
+### 11. Pull Changes from a Remote Repository
+
+To update your local repository with changes from a remote repository, use the `git pull` command.
+
+```bash
+git pull origin <branch_name>
+```
+
+Replace `<branch_name>` with the name of the branch you want to pull from.
+
+### 12. Discard Local Changes
+
+If you want to discard local changes and revert to the last committed state, use the `git reset --hard` command.
+
+```bash
+git reset --hard
+```
+
+**Note:** Be cautious when using this command, as it discards all local changes.
+
 ## Resources
 
 - [Next.js Documentation](https://nextjs.org/docs)
