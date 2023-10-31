@@ -1,5 +1,3 @@
-Certainly, here's the continuation and completion of your README file:
-
 ## Getting Started
 
 ### Clone repository to your local machine
@@ -9,8 +7,6 @@ Certainly, here's the continuation and completion of your README file:
    ```bash
    mkdir <directory name>
    ```
-
-or
 
 ```bash
 cd <path>
@@ -62,9 +58,7 @@ This will start your development server, and you can access your Next.js applica
 
 ## Resources
 
-For more information on using Next.js, TypeScript, and other topics related to web development, refer to the official documentation:
-
 - [Next.js Documentation](https://nextjs.org/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 
-Feel free to customize this README to fit your specific project requirements and add any additional information as needed. Happy coding!
+Happy coding!
