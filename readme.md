@@ -2,11 +2,15 @@
 
 ### Clone repository to your local machine
 
-1. Create a new folder or navigate to an existing one:
+1. Create a new directory or navigate to an existing one:
+
+   New directory:
 
    ```bash
-   mkdir <directory>
+   mkdir <name>
    ```
+
+   Existing directory:
 
    ```bash
    cd <directory>
@@ -42,6 +46,6 @@
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
-- [SST](https://docs.sst.dev/)
+- [SST Documentation](https://docs.sst.dev/)
 
 Happy coding!
