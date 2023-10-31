@@ -5,12 +5,12 @@
 1. Create a new folder or navigate to an existing one:
 
    ```bash
-   mkdir <directory name>
+   mkdir <directory>
    ```
 
-```bash
-cd <path>
-```
+   ```bash
+   cd <directory>
+   ```
 
 2. Clone the project repository from GitHub:
 
@@ -38,27 +38,10 @@ cd <path>
    yarn install
    ```
 
-### Start the Development Server
-
-To run your Next.js TypeScript application in development mode, use the following command:
-
-Using npm:
-
-```bash
-npm run dev
-```
-
-Using yarn:
-
-```bash
-yarn dev
-```
-
-This will start your development server, and you can access your Next.js application at [http://localhost:3000](http://localhost:3000) in your web browser.
-
 ## Resources
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
+- [SST](https://docs.sst.dev/)
 
 Happy coding!
