@@ -1,6 +1,5 @@
 # ABIsolutions
 
-- [ABIsolutions](#abisolutions)
 - [Prerequisites](#prerequisites)
   - [Node.js](#nodejs)
     - [Windows Installation](#windows)
@@ -17,7 +16,7 @@
 
 ### Node.js
 
-**Node.js:** version 18.18.2.
+- version 18.18.2.
 
 You can download and install Node.js version 18.18.2 from [the official node release page](https://nodejs.org/download/release/v18.18.2/).
 
@@ -25,7 +24,8 @@ You can download and install Node.js version 18.18.2 from [the official node rel
 
 1. Download the Windows Installer (MSI) package for Node.js version 18.18.2 from the provided link.
 
-   - Look for the files that include the suffix `.msi`
+   - Look for the files that include the suffix `.msi`.
+   - Take note of the different versions `x86` and `x64`. Pick the version matching operating system.
 
 2. Run the downloaded MSI installer package. Follow the installation wizard's instructions, no changes are required since the default settings should include all the required selections.
 
@@ -65,7 +65,7 @@ You can download and install Node.js version 18.18.2 from [the official node rel
 
 ### Git
 
-- **Git:** You'll also need Git for version control. If you don't have Git installed, you can download and install it from [the official Git website](https://git-scm.com/).
+- You'll also need Git for version control. If you don't have Git installed, you can download and install it from [the official Git website](https://git-scm.com/).
 
   To check if you have Git installed, run:
 
@@ -149,7 +149,7 @@ You can download and install Node.js version 18.18.2 from [the official node rel
    npm run dev
    ```
 
-   By default the local environment is using the port `3000`
+   By default the local environment is using the port `3000`.
 
    To start the local environment using a different port, you can export an environmental with the desired value:
 
