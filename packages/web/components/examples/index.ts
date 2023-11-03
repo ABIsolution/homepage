@@ -1,6 +1,5 @@
 import Button from './button';
 import Input from './input';
-import Paragraph from './paragraph';
-import Header from './header';
+import Typograph from './typograph';
 
-export { Button, Input, Paragraph, Header };
+export { Button, Input, Typograph };

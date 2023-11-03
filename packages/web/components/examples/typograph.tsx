@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface HeaderProps {
+interface TypographProps {
   children: string;
-  variant?: 'h1' | 'h2' | 'h3' | 'h4';
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'paragraph';
   className?: string;
   styles?: Record<string, string>;
 }
 
-const Header: React.FC<HeaderProps> = ({
+const Typograph: React.FC<TypographProps> = ({
   children,
   variant = 'h1',
   className,
@@ -42,7 +42,6 @@ const Header: React.FC<HeaderProps> = ({
         </h4>
       );
     case 'h1':
-    default:
       return (
         <h1
           className={`${variant} ${className || ''}`}
@@ -51,7 +50,14 @@ const Header: React.FC<HeaderProps> = ({
           {children}
         </h1>
       );
+    case 'paragraph':
+    default:
+      return (
+        <p className={`${variant} ${className || ''}`} style={styles}>
+          {children}
+        </p>
+      );
   }
 };
 
-export default Header;
+export default Typograph;

@@ -1,10 +1,5 @@
 import React, { MouseEvent } from 'react';
-import {
-  Button,
-  Input,
-  Paragraph,
-  Header,
-} from '../components/examples';
+import { Button, Input, Typograph } from '../components/examples';
 // Example stylings
 const styles = {
   container: {
@@ -51,12 +46,12 @@ export default function Example() {
   return (
     <main>
       <div style={styles.container}>
-        <Header styles={styles.title}>
+        <Typograph styles={styles.title}>
           Hello, this is an example.
-        </Header>
-        <Paragraph styles={styles.subParagraph}>
+        </Typograph>
+        <Typograph styles={styles.subParagraph}>
           Here are some example components.
-        </Paragraph>
+        </Typograph>
         <form name="exampleForm" id="example-page-form">
           <Button
             text="increment"
@@ -85,7 +80,7 @@ export default function Example() {
             value={clickCount}
             onChange={() => void 0}
           />
-          <Paragraph styles={styles.paragraph}>{formValue}</Paragraph>
+          <Typograph styles={styles.paragraph}>{formValue}</Typograph>
         </form>
       </div>
     </main>
