@@ -1,11 +1,15 @@
-import React, { MouseEvent } from 'react';
-import { Button, Input, Typograph } from '../components/examples';
+import React from 'react';
+import { Button, Input, Typography } from '../components/common';
+import Layout from '../components/layout';
 // Example stylings
-const styles = {
+const styles: Record<
+  string,
+  React.HTMLAttributes<HTMLDivElement>['style']
+> = {
   container: {
     padding: '0.5em',
     display: 'flex',
-    'flex-direction': 'column',
+    flexDirection: 'column',
   },
   incrementButton: {
     border: '1px solid green',
@@ -18,10 +22,10 @@ const styles = {
     margin: '0.5em',
   },
   input: { padding: '0.5em', margin: '0.5em' },
-  paragraph: { color: 'red', 'font-size': '12', margin: '0.5em' },
+  paragraph: { color: 'red', fontSize: '12', margin: '0.5em' },
   subParagraph: {
     color: 'green',
-    'font-size': '15',
+    fontSize: '15',
     margin: '0.5em',
   },
   title: { color: 'blue', margin: '0.5em' },
@@ -35,23 +39,26 @@ export default function Example() {
     if (elementName === 'incrementButton') {
       setClickCount((prev) => prev + 1);
     } else if (elementName === 'decrementButton') {
-      setClickCount((prev) => prev - 1);
+      if (clickCount > 0) {
+        setClickCount((prev) => prev - 1);
+      }
     }
   }
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+    event.preventDefault();
     if (event.target.name === 'input') {
       setFormValue((_prev) => event.target.value);
     }
   }
   return (
-    <main>
+    <Layout>
       <div style={styles.container}>
-        <Typograph styles={styles.title}>
+        <Typography styles={styles.title}>
           Hello, this is an example.
-        </Typograph>
-        <Typograph styles={styles.subParagraph}>
+        </Typography>
+        <Typography styles={styles.subParagraph}>
           Here are some example components.
-        </Typograph>
+        </Typography>
         <form name="exampleForm" id="example-page-form">
           <Button
             text="increment"
@@ -80,9 +87,11 @@ export default function Example() {
             value={clickCount}
             onChange={() => void 0}
           />
-          <Typograph styles={styles.paragraph}>{formValue}</Typograph>
+          <Typography styles={styles.paragraph}>
+            {formValue}
+          </Typography>
         </form>
       </div>
-    </main>
+    </Layout>
   );
 }
