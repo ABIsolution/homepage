@@ -6,6 +6,8 @@ import React from 'react';
 interface ButtonProps {
   text: string;
   name?: string;
+  value?: string | number;
+  id?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   disabled?: boolean;
@@ -15,18 +17,22 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   text,
   name,
+  value,
   onClick,
   className,
   disabled,
   styles,
+  id,
 }) => {
   return (
     <button
-      name={name || 'button'}
+      name={name}
+      id={id}
       className={`btn ${className || ''}`}
       onClick={onClick}
       disabled={disabled}
       style={styles}
+      value={value}
     >
       {text}
     </button>

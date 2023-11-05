@@ -3,6 +3,7 @@ import React from 'react';
 interface TypographyProps {
   children: string;
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'paragraph';
+  id?: string;
   className?: string;
   styles?: React.HTMLAttributes<HTMLDivElement>['style'];
 }
@@ -10,6 +11,7 @@ interface TypographyProps {
 const Typography: React.FC<TypographyProps> = ({
   children,
   variant = 'h1',
+  id,
   className,
   styles,
 }) => {
@@ -17,6 +19,7 @@ const Typography: React.FC<TypographyProps> = ({
     case 'h2':
       return (
         <h2
+          id={id}
           className={`${variant} ${className || ''}`}
           style={styles}
         >
@@ -26,6 +29,7 @@ const Typography: React.FC<TypographyProps> = ({
     case 'h3':
       return (
         <h3
+          id={id}
           className={`${variant} ${className || ''}`}
           style={styles}
         >
@@ -35,6 +39,7 @@ const Typography: React.FC<TypographyProps> = ({
     case 'h4':
       return (
         <h4
+          id={id}
           className={`${variant} ${className || ''}`}
           style={styles}
         >
@@ -44,6 +49,7 @@ const Typography: React.FC<TypographyProps> = ({
     case 'h1':
       return (
         <h1
+          id={id}
           className={`${variant} ${className || ''}`}
           style={styles}
         >
@@ -53,7 +59,11 @@ const Typography: React.FC<TypographyProps> = ({
     case 'paragraph':
     default:
       return (
-        <p className={`${variant} ${className || ''}`} style={styles}>
+        <p
+          className={`${variant} ${className || ''}`}
+          style={styles}
+          id={id}
+        >
           {children}
         </p>
       );

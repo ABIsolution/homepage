@@ -4,6 +4,7 @@ interface InputProps {
   type: React.InputHTMLAttributes<HTMLInputElement>['type'];
   placeholder?: string;
   name?: string;
+  id?: string;
   value: string | number;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
@@ -18,13 +19,15 @@ const Input: React.FC<InputProps> = ({
   onChange,
   className,
   disabled,
+  id,
   name,
   styles,
 }) => {
   return (
     <input
       type={type}
-      name={name || 'input'}
+      id={id}
+      name={name}
       className={`input ${className || ''}`}
       placeholder={placeholder}
       value={value}

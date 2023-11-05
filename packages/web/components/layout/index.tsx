@@ -9,7 +9,6 @@ const styles: Record<
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    padding: '20px',
     backgroundColor: '#f0f0f0',
   },
   body: {

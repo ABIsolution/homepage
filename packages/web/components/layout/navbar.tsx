@@ -36,6 +36,7 @@ const Navbar: React.FC = () => {
         src={navbarImage}
         alt="ABIsolutions Logo"
         style={styles.logo}
+        priority
       />
       <nav style={styles.nav}>
         <Link
@@ -45,9 +46,9 @@ const Navbar: React.FC = () => {
           style={styles.navLink}
         />
         <Link
-          href="/example"
+          href="/tasks"
           className="nav-link"
-          title="Example"
+          title="Tasks"
           style={styles.navLink}
         />
       </nav>
