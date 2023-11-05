@@ -113,7 +113,7 @@ const Tasks: React.FC<{
 
   async function refreshTasks() {
     setLoading(true);
-    const response: { Tasks: { status: boolean; title: string } } =
+    const response: { Tasks: { status: boolean; title: string }[] } =
       await fetch('http://127.0.0.1:80/api/tasks', {
         method: 'GET',
       })
@@ -127,7 +127,7 @@ const Tasks: React.FC<{
       'Tasks' in response &&
       Array.isArray(response.Tasks)
     ) {
-      setTasks(response.Tasks);
+      setTasks((_prev) => response.Tasks);
     }
     await wait(Math.floor(Math.random() * 3000));
     setLoading(false);
